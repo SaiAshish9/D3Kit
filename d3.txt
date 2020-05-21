@@ -14,3 +14,35 @@
 .domain([])
 .range([])
 .property()
+.extent()
+.fill()
+.domain(d3.extent(data,()=>data.price))
+
+yscale=d3.scaleLinear
+          .domain(d3.extent(data))
+          .range([height,0])
+xscale=d3.scaleLinear
+          .domain(d3.extent(data))
+          .range([0,width])
+          
+       [height-padding,padding]   
+       [padding,width-padding]
+       
+ var colorScale=d3.scaleLinear()
+                  .domain(d3.extent....)
+                  .range(['green','red'])
+                  
+                  .range([2,40])
+                  
+d3.select('svg')
+   .attr("height",500)
+   .attr("width',500)
+   .selectAll('circle')
+   .data()
+   .enter()
+   .append('circle')
+     .attr('cx',xScale(x1/x))
+     .attr('cy',yScale(y))
+     .attr('fill',colorScale(--)))
+     .attr('r',radiusScale(--))
+   
