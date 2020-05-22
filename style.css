@@ -1,0 +1,14 @@
+svg, input {
+  margin: 0 auto;
+  display: block;
+}
+
+.bin-count {
+  text-align: center;
+}
+
+.tick line {
+  stroke: #eee;
+  stroke-dasharray: 7,5;
+  /* stroke-width:0px; */
+}
